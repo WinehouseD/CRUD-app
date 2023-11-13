@@ -21,7 +21,10 @@ const Item = ({
   return (
     <div>
       <ListItem>
-        <ListItemText primary={title} />
+        <ListItemText
+          primary={title}
+          style={{ textDecoration: status ? "line-through" : "none" }}
+        />
         <ListItemSecondaryAction>
           <Checkbox
             edge="end"
